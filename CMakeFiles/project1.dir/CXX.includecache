@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/zeritte/Documents/Lectures/cmpe/cmpe250/workspace/cmpe250-project1-zeritte/LinkedList.h
+iostream
+-
+Node.h
+/Users/zeritte/Documents/Lectures/cmpe/cmpe250/workspace/cmpe250-project1-zeritte/Node.h
+
+/Users/zeritte/Documents/Lectures/cmpe/cmpe250/workspace/cmpe250-project1-zeritte/Node.h
+iostream
+-
+
+/Users/zeritte/Documents/Lectures/cmpe/cmpe250/workspace/cmpe250-project1-zeritte/SurveyClass.h
+LinkedList.h
+/Users/zeritte/Documents/Lectures/cmpe/cmpe250/workspace/cmpe250-project1-zeritte/LinkedList.h
+string
+-
+
+/Users/zeritte/Documents/Lectures/cmpe/cmpe250/workspace/cmpe250-project1-zeritte/main.cpp
+iostream
+-
+sstream
+-
+fstream
+-
+vector
+-
+SurveyClass.h
+/Users/zeritte/Documents/Lectures/cmpe/cmpe250/workspace/cmpe250-project1-zeritte/SurveyClass.h
+
