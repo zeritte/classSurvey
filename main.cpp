@@ -41,23 +41,19 @@ int main(int argc, char* argv[]) {
     cout << "input file: " << argv[1] << endl;
     cout << "output file: " << argv[2] << endl; */
 
-    LinkedList a,b,c,d;
+    LinkedList a,b,c;
     a.pushTail("ahmet", 2.33);
     a.pushTail("mehmet", 3.33);
     a.pushTail("kazım", 4.33);
     a.pushTail("mustafa", 6.33);
-    a.print();
     cout << "2nd ara" <<endl;
     c=move(a);
     b.updateNode("mustafa", 7.44);
-    b.print();
     cout << "3rd ara" << endl;
     c.pushTail("of of", 0.3);
-    c.print();
     cout << "4th ara" << endl;
-    d=move(c);
-    d.updateNode("of of", 1.1);
-    d.print();
+    b=move(c);
+    b.updateNode("of of", 1.1);
 
 
     /*

@@ -46,7 +46,6 @@ LinkedList& LinkedList::operator=(const LinkedList &list) {
 }
 
 LinkedList::LinkedList(LinkedList &&list) {
-    if(head) delete this->head;
     this->head=move(list.head);
     this->tail=move(list.tail);
     this->length=move(list.length);
@@ -109,16 +108,6 @@ void LinkedList::updateNode(string _name, float _amount) {
 
 }
 
-void LinkedList::print(){
-    Node* curr;
-    curr=this->head;
-    while(curr){
-        cout <<curr->name<<" "<<curr->amount << endl;
-        curr = curr->next;
-    }
-}
-
 LinkedList::~LinkedList() {
     if (head) delete head;
 }
-

@@ -30,7 +30,6 @@ public:
 
     ~LinkedList();
     
-    void print();
 };
 
 #endif
