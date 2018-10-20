@@ -28,8 +28,16 @@ void SurveyClass::handleNewRecord(string _name, float _amount) {
     members->updateNode(_name, _amount);
 }
 
+void SurveyClass::print(){
+    Node* temp=this->members->head;
+    while(temp){
+      cout << "name: "<< temp->name<<" amount: "<<temp->amount<< endl;
+      temp=temp->next;
+    }
+}
+
 float SurveyClass::calculateMinimumExpense() {
-    
+
 }
 
 float SurveyClass::calculateMaximumExpense() {

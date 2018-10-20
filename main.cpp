@@ -41,10 +41,7 @@ int main(int argc, char* argv[]) {
     cout << "input file: " << argv[1] << endl;
     cout << "output file: " << argv[2] << endl;
 
-    SurveyClass mySurveyClass;
-    SurveyClass haha = move(mySurveyClass);
 
-    /*
     // here, perform the input operation. in other words,
     // read the file named <argv[1]>
     ifstream infile(argv[1]);
@@ -70,6 +67,9 @@ int main(int argc, char* argv[]) {
 
     cout << "input file has been read" << endl;
 
+    mySurveyClass.print();
+
+    /*
     float minExp = mySurveyClass.calculateMinimumExpense();
     float maxExp = mySurveyClass.calculateMaximumExpense();
     float avgExp = mySurveyClass.calculateAverageExpense();
