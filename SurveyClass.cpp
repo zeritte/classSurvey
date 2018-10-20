@@ -40,7 +40,7 @@ float SurveyClass::calculateMinimumExpense() {
     }
     int to_round=min;
     float to_round2=min-to_round;
-    cout <<min<<to_round<<to_round2<<endl;
+    std::cout << to_round2 << '\n';
     to_round2=to_round2*100;
     to_round=int(to_round2);
     min=int(min)+(to_round)/100.0;
@@ -63,6 +63,7 @@ float SurveyClass::calculateMaximumExpense() {
     to_round=int(to_round2);
     max=int(max)+(to_round)/100.0;
     return max;
+
 }
 
 float SurveyClass::calculateAverageExpense() {
@@ -75,13 +76,19 @@ float SurveyClass::calculateAverageExpense() {
       i++;
       temp=temp->next;
     }
-    avg=sum/i;
+    /*avg=sum/i;
     int to_round=avg;
     float to_round2=avg-to_round;
     to_round2=to_round2*100;
     to_round=int(to_round2);
     avg=int(avg)+(to_round)/100.0;
-    return avg;
+    return avg;*/
+    int presicion = 1000*sum/i;
+    if(presicion%10>=5){
+        presicion=(presicion+10)/10;
+    }else
+        presicion/=10;
+    return (float) presicion/100;
 }
 
 SurveyClass::~SurveyClass() {
