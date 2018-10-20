@@ -33,28 +33,16 @@ float findAmount(const vector<string> words)
 int main(int argc, char* argv[]) {
     // below reads the input file
     // in your next projects, you will implement that part as well
-    /* if (argc != 3) {
+    if (argc != 3) {
         cout << "run the code with the following command: ./project1 [input_file] [output_file]" << endl;
         return 1;
     }
 
     cout << "input file: " << argv[1] << endl;
-    cout << "output file: " << argv[2] << endl; */
+    cout << "output file: " << argv[2] << endl;
 
-    LinkedList a,b,c;
-    a.pushTail("ahmet", 2.33);
-    a.pushTail("mehmet", 3.33);
-    a.pushTail("kazım", 4.33);
-    a.pushTail("mustafa", 6.33);
-    cout << "2nd ara" <<endl;
-    c=move(a);
-    b.updateNode("mustafa", 7.44);
-    cout << "3rd ara" << endl;
-    c.pushTail("of of", 0.3);
-    cout << "4th ara" << endl;
-    b=move(c);
-    b.updateNode("of of", 1.1);
-
+    SurveyClass mySurveyClass;
+    SurveyClass haha = move(mySurveyClass);
 
     /*
     // here, perform the input operation. in other words,
