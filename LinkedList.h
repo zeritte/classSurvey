@@ -29,6 +29,8 @@ public:
     void updateNode(string _name, float _amount);
 
     ~LinkedList();
+    
+    void print();
 };
 
 #endif
