@@ -26,8 +26,6 @@ public:
     // The average amount can have up to two decimal points.
     float calculateAverageExpense();
 
-    void print();
-
     LinkedList* members = NULL;
 };
 

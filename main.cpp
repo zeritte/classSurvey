@@ -67,9 +67,6 @@ int main(int argc, char* argv[]) {
 
     cout << "input file has been read" << endl;
 
-    mySurveyClass.print();
-
-    /*
     float minExp = mySurveyClass.calculateMinimumExpense();
     float maxExp = mySurveyClass.calculateMaximumExpense();
     float avgExp = mySurveyClass.calculateAverageExpense();
@@ -84,7 +81,6 @@ int main(int argc, char* argv[]) {
     cout << "minExp " << minExp << endl;
     cout << "maxExp " << maxExp << endl;
     cout << "avgExp " << avgExp << endl;
-    */
 
 
     return 0;
