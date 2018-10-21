@@ -9,8 +9,7 @@ SurveyClass::SurveyClass(const SurveyClass &other) {
 }
 
 SurveyClass& SurveyClass::operator=(const SurveyClass &list) {
-    if (members) delete members;
-    members = new LinkedList(*list.members);
+    *members = *list.members;
     return *this;
 }
 
@@ -19,8 +18,7 @@ SurveyClass::SurveyClass(SurveyClass &&other) {
 }
 
 SurveyClass& SurveyClass::operator=(SurveyClass &&list) {
-    if (members) delete members;
-    members = new LinkedList(move(*list.members));
+    *members = move(*list.members);
     return *this;
 }
 

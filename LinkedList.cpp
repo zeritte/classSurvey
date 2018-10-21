@@ -12,10 +12,10 @@ LinkedList::LinkedList(const LinkedList& list) {
         Node *temp=list.head;
         this->head=new Node(temp->name, temp->amount);
         this->tail=this->head;
-        while(temp){
+        while(temp->next){
+            temp=temp->next;
             this->tail->next=new Node(temp->name,temp->amount);
             this->tail=this->tail->next;
-            temp=temp->next;
         }
         this->length=list.length;
     } else {
@@ -31,10 +31,10 @@ LinkedList& LinkedList::operator=(const LinkedList &list) {
         Node *temp=list.head;
         this->head=new Node(temp->name, temp->amount);
         this->tail=this->head;
-        while(temp){
+        while(temp->next){
+            temp=temp->next;
             this->tail->next=new Node(temp->name,temp->amount);
             this->tail=this->tail->next;
-            temp=temp->next;
         }
     }else{
         this->head=0;
